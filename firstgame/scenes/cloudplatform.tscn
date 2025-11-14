@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://0jdnwjrpryr7"]
+
+[ext_resource type="Texture2D" uid="uid://djc8upl0jiokg" path="res://sprites/GandalfHardcore FREE Platformer Assets/cloud3.png" id="1_6jomi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vf52"]
+size = Vector2(55, 5)
+
+[node name="cloudplatform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6jomi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_2vf52")
+one_way_collision = true

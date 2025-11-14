@@ -37,8 +37,8 @@ func _physics_process(delta: float) -> void:
 	elif Input.is_action_just_pressed("ui_accept") and global.coin >= 13 and jump_count == 1:
 		velocity.y = JUMP_VELOCITY
 		jump_count = 2  # Used double jump
-# --- Extra coyote time if player has 9+ coins ---
-	if global.coin >= 1:
+# --- Extra coyote time if player has 10+ coins ---
+	if global.coin >= 10:
 		coyote_time = 1
 
 
